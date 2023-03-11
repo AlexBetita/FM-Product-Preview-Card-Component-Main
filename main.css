@@ -1,3 +1,13 @@
+@font-face {
+    font-family: montserrat;
+    src: url(/assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: fraunces;
+    src: url(/assets/fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
 html, body{
     width: 100%;
     height: 100%;
@@ -9,11 +19,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 14px;
+    font-family: montserrat;
 }
 
 .main {
     display: flex;
-    width: 50%;
+    width: 45%;
     height: 60%;
 }
 
@@ -34,18 +46,75 @@ img {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    padding: 30px 30px;
+    /* padding: 30px 30px; */
+    background-color: hsl(0,0%,100%);
+
+    border-top-right-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+
+.perfume {
+    color: hsla(233, 3%, 62%, 1);
+}
+
+.description {
+    color: hsla(233, 3%, 62%, 1);
+    font-size: 18px;
+    line-height: 1.6
+}
+
+.right-preview > div {
+    margin: 0 30px;
+}
+
+.right-preview > div:nth-child(1){
+    margin-top: 30px;
+}
+
+.right-preview > div:last-child{
+    margin-bottom: 30px;
+}
+
+.essence {
+    font-family: fraunces;
+    font-weight: bolder;
+    font-size: 40px;
 }
 
 .price {
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 
 .price div:nth-child(1){
-    padding-right: 10px;
+    color: hsla(157, 36%, 37%, 1);
+    font-size: 45px;
+    font-family: fraunces;
+    font-weight: 700;
 }
 
 .price div:nth-child(2){
-    padding-left: 10px;
+    margin-left: 30px;
+    color: hsla(233, 3%, 62%, 1);
+    font-size: 16px;
+}
+
+.button{
+    background-color: hsla(157, 36%, 37%, 1);
+    /* border: unset; */
+    color: hsl(0,0%,100%);
+    border-radius: 7px;
+    height: 12.5%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button div:nth-child(1){
+    margin-right: 5px;
+}
+
+.button div:nth-child(2){
+    margin-left: 5px;
 }
